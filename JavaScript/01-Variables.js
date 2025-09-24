@@ -1,5 +1,6 @@
 //===VARIABLES===//
 
+console.log("Section 1 - Variables");
 //JavaScript variables are containers for data.
 //JavaScript variables can be declared in 4 ways:
 /**
@@ -10,12 +11,14 @@
  */
 
 let letVariable = "changeable";
+console.log(`The 'let' variable is ${letVariable}`);
 // The let declaration declares re-assignable, block-scoped local variables, optionally initializing each to a value.
 let nameA = "valueA";
 let nameB = "valueB",
   nameC = "valueC";
 
 const constVariable = "constant";
+console.log(`The 'const' variable is ${constVariable}`);
 //The const declaration declares block-scoped local variables. The value of a constant can't be changed through reassignment using the assignment operator
 const name1 = "value1";
 const name2 = "value2",
@@ -26,12 +29,14 @@ const name4 = "value4",
 //If a constant is an object, its properties can be added, updated, or removed.
 
 var varVariable = "outdated";
+console.log(
+  `The 'var' variable is ${letVariable} and not recommended in modern JS.`
+);
 // var declarations, wherever they occur in a script, are processed before any code within the script is executed. Declaring a variable anywhere in the code is equivalent to declaring it at the top.
 
-// JavaScript Primitives
+//*JavaScript Primitives *//
 
 // A primitive data type is data type that can only store a single primitive value.
-
 // JavaScript defines 7 types of primitive data types:
 
 // Type:	    Example value:
@@ -39,6 +44,6 @@ var varVariable = "outdated";
 // -number	    - 3.14
 // -boolean	    - true
 // -bigint	    - 12345678901234
-// -null	    - null
-// -undefined	- undefined
+// -null	      - null
+// -undefined	  - undefined
 // -symbol	    - symbol
