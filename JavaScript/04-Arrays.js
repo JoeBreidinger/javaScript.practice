@@ -1,4 +1,4 @@
-// ===ARRAYS===//
+// ==ARRAYS===//
 
 console.log("Section 3 - Arrays");
 console.log(
@@ -85,36 +85,38 @@ for (let i = 0; i < fruits03.length; i++) {
 var citrusFruits = ["Tangerine", "Orange", "Grapefruit", "Lemon"];
 citrusFruits.push("Lime"); // adds a new element (Lime) to citrusFruits
 console.log(citrusFruits);
+
 // WARNING !
 // Adding elements with high indexes can create undefined "holes" in an array:
+/*
+List of most used JavaScript Array Methods:
 
-// List of most used JavaScript Array Methods:
+1. push() / pop()
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
+The pop() method removes the last element from an array and returns that element.
 
-// 1. push() / pop()
-// The push() method adds one or more elements to the end of an array and returns the new length of the array.
-// The pop() method removes the last element from an array and returns that element.
+2. shift() / unshift()
+The shift() method removes the first element from an array and returns that element.
+The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
 
-// 2. shift() / unshift()
-// The shift() method removes the first element from an array and returns that element.
-// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+3. concat()
+The concat() method merges two or more arrays, creating a new array without modifying the existing arrays
 
-// 3. concat()
-// The concat() method merges two or more arrays, creating a new array without modifying the existing arrays
+4. map()
+The map() method creates a new array with the results of calling a provided function on every element in the array.
 
-// 4. map()
-// The map() method creates a new array with the results of calling a provided function on every element in the array.
+5. forEach()
+The forEach() method executes a provided function once for each array element.
 
-// 5. forEach()
-// The forEach() method executes a provided function once for each array element.
+6. slice()
+The slice() method extracts a portion of an array into a new array, without modifying the original array.
 
-// 6. slice()
-// The slice() method extracts a portion of an array into a new array, without modifying the original array.
+7. splice()
+The splice() method changes the contents of an array by removing or replacing elements at a specified index.
 
-// 7. splice()
-// The splice() method changes the contents of an array by removing or replacing elements at a specified index.
-
-// 10. filter()
-// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+10. filter()
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+*/
 
 //* Associative Arrays *//
 

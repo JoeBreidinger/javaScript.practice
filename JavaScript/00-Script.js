@@ -1,14 +1,14 @@
 //======JAVASCRIPT======//
 
 const syllabus = [
-  "variables",
+  "Programming logic and math",
+  " variables",
   " objects",
   " arrays",
   " functions",
-  " parameters_vs_arguments",
   " comparisons",
+  " parameters and arguments",
   " loops",
-  " simple_programming_logic",
   " DOM",
   " events",
   " TDD",
@@ -17,6 +17,6 @@ const syllabus = [
 console.log("Welcome to JavaScript Practice!");
 console.log("Syllabus: " + syllabus);
 console.log(
-  "It is advised that you activate each section by 'un-noting' it in the index html file as you read through the javascript files."
+  "It is advised that you activate each section by 'un-commenting' the one you're on in the index html file as you read through the javascript files."
 );
 console.log("Have fun learning!");

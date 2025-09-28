@@ -88,10 +88,67 @@ carObject.color = "white";
 const arr = [1, 2, 3];
 arr.push(4); // '.push' inherited from Array.prototype
 
-//* The 'this' Keyword */
+/*
+10 Important JavaScript Object Methods
+
+1. Object Keys: Object.keys(obj): 
+  The Object.keys() the method returns an array of a given object's own 
+  enumerable property names, in the same order as we get with a normal loop. 
+  This array only includes properties that are enumerable. Enumerable 
+  properties are those properties whose internal enumerable flag is set to true.
+
+2. Object Values: Object.values(obj):
+  The Object.values() the method returns an array of a given object's own enumerable property values, in the same order as that provided by a 
+  for...in the loop. This array includes only the values of enumerable properties.
+
+3. Object Entries: Object.entries(obj): 
+  The Object.entries() the method returns an array of a given object's own 
+  enumerable property [key, value] pairs, in the same order as that provided 
+  by a for...in loop. This array includes only the properties that are 
+  enumerable.
+
+4. Object assign: Object.assign(obj1, obj2, ...): 
+  Copies the values of all enumerable own properties from one or more source 
+  objects to a target object and returns the target object. This method is 
+  used to copy properties from one object to another, it makes a complete copy 
+  of all properties, including non-enumerable properties.
+
+5. Object defineProperty: Object.defineProperty(obj, prop, descriptor): 
+  Defines a new property directly on an object, or modifies an existing 
+  property on an object, and returns the object. The defineProperty() the 
+  method allows you to define a new property on an object, or modify an 
+  existing property, and provides a way to set the property's attributes.
+
+6. Object defineProperty:Object.defineProperty(obj, prop, descriptor): 
+  Defines a new property directly on an object, or modifies an existing 
+  property on an object, and returns the object. The defineProperty() the 
+  method allows you to define a new property on an object, or modify an 
+  existing property, and provides a way to set the property's attributes.
+
+7. Object defineProperties: Object.defineProperties(obj, props): 
+  Defines new or modifies existing properties directly on an object and 
+  returns the object. The defineProperties() the method is similar to the 
+  defineProperty() method, but it allows you to define multiple properties at 
+  once, using an object that contains the property descriptors.
+
+8. Object getOwnPropertyDescriptor: Object.getOwnPropertyDescriptor(obj, prop):  
+  The getOwnPropertyDescriptor() method returns a property descriptor for an own property (that is, one directly present on an object, not present by virtue of being along an object's prototype chain) of a given object.
+
+9. Object getOwnPropertyNames: Object.getOwnPropertyNames(obj): 
+  The getOwnPropertyNames() method returns an array of all properties (enumerable or non-enumerable) found directly on an object.
+
+10. Object Create: Object.create(proto[, propertiesObject]): 
+  The create() method creates a new object with the specified prototype object 
+  and properties. If the prototype is not an object or null, it throws a 
+  TypeError.
+
+*/
+
+//* The 'this' Keyword *//
 
 //  In a function definition, this refers to the "owner" of the function.
-//  In the example above, this is the person object that "owns" the fullName function.
+//  In the example below,
+//  'this' is the person object that "owns" the fullName function.
 //  In other words, this.firstName means the firstName property of this object.
 // Example:
 const person3 = {
@@ -99,11 +156,11 @@ const person3 = {
   lastName: "Slim",
   id: 5566,
   fullName: function () {
-    return this.firstName + " " + this.lastName; //returns 'Jim Slim'
+    return this.firstName + " " + this.lastName;
   },
 };
-// document.getElementById("person3Tag").innerHTML = person3.fullName();//
-//^ DOM scripting = covered later in the guide ^//
+console.log(person3.fullName());
+// returns 'Jim Slim'
 
 // Programmer-Defined Methods
 // You can create custom methods like this:
